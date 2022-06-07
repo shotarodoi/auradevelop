@@ -1,0 +1,8 @@
+<aura:component>
+    <aura:attribute name="item" type="Camping_Item__c" />
+    <lightning:card title="Camping">
+        <p>name:<ui:outputText value="{!v.item.Name}" /></p>
+        <p><lightning:formattedNumber value="{!v.item.Quantity__c}" /></p>
+        <p><lightning:formattedNumber style="currency" value="{!v.item.Price__c}" /></p>
+    </lightning:card>
+</aura:component>
